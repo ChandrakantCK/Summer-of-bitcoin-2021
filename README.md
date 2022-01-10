@@ -4,30 +4,28 @@ Summer of Bitcoin code challenge 2021- Maximizing profit to a Bitcoin Miner
 
 # Motivation behind the project:
 
-My motivation behind this project was to apply my knowledge and solve a real life problem. This project was asked in the Summer of Bitcoin 2021 challenge and the problem statement was to select optimal transactions producing maximum profit to a bitcoin miner.  
+My motivation for working on this project was to put my knowledge to use and solve a real-world problem. This project was requested as part of the Summer of Bitcoin 2021 challenge, with the problem statement being to select optimal transactions that produce the greatest profit for a bitcoin miner.
 
 
 # Project Explanation:
-This project is based on a real life problem faced by a bitcoin miner. So, the work of a Bitcoin miner is to construct blocks by selecting a set of transactions from their mempool. Now each transaction in the mempool has got a certain fee which is collected by the miner if the transaction gets included in the block.
-Also, each transaction has a weight which indicates the size of transactions. And also, it may be possible that a transaction contains two or more parent transactions which means that before taking a particular transaction, it is a must to take all its parent transactions. 
+This project is based on a real-world problem that a bitcoin miner faces. A Bitcoin miner's job is to create blocks by selecting a set of transactions from their mempool. Each transaction in the mempool now has a fee attached to it, which is collected by the miner if the transaction is included in the block.
+In addition, each transaction has a weight that indicates the size of the transaction. Furthermore, it is possible that a transaction contains two or more parent transactions, which means that before accepting a specific transaction, it is necessary to accept all of its parent transactions.
 
-Now, the job of a miner is to select an ordered list of transactions which have a combined weight below the maximum block weight and which also satisfies the parent child constraint. 
-Now, naturally every miner wants to maximize its total fee.
+A miner's job now is to select an ordered list of transactions with a combined weight less than the maximum block weight and that also satisfy the parent child constraint.
+Naturally, every miner wants to maximise his or her total fee.
 
-So, here my work was to analyze the transactions and come up with an ordered list of transactions which satisfies the constraints and provides maximum profit to the miner.
- 
+So, my job here was to analyse the transactions and create an ordered list of transactions that meet the constraints and maximise the miner's profit.
  
 # Challenges faced:
 
-This was a heuristic problem and was aimed at optimizing more and more to reach as close as possible to the perfect answer. 
-However a 100% perfect answer to the problem can be found out using min cut max flow algorithm. 
-However, considering the time complexity of min cut max flow algorithm, it can not be applied to large data sets having transaction ids close to 5000. Hence this was challenging to reach close to a perfect answer without using min cut max flow algorithm. 
+This was a heuristic problem in which the goal was to optimise more and more in order to get as close to the perfect answer as possible.
+The min cut max flow algorithm, on the other hand, can find a perfect solution to the problem.
+However, due to the time complexity of the min cut max flow algorithm, it cannot be applied to large data sets with transaction ids in excess of 5000. As a result, it was difficult to come close to a perfect solution without using the min cut max flow algorithm. 
 
 
 # Further Improvement: 
 
-I am planning to understand and learn the min cut max flow algorithm and further pruning the cases to optimize the time and come up with an even better answer.
-
+I intend to understand and learn the min cut max flow algorithm, as well as prune the cases further to optimise time and produce an even better answer.
 
 # How does my algorithm work?
 
